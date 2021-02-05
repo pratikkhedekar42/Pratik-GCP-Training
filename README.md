@@ -16,21 +16,21 @@ Activity 1.2 (Add high avaialbilty and scalabilty to the existing app deployed i
  steps performed:
  
  1.create instance template and two manage instance groups with min. instance 1 and max. instance 3
- 2.create load balancer and add two MIGs as backends.
- 3.create vm instance using instance template in us-central1-a zone
- 4.create vm instance using instance template in us-central1-b zone
+ 2.create load balancer(pratik-loadbalancer) and add two MIGs as backends.
+ 3.create healthcheck (pratik-healthcheck)
+ 4.Install nginx on both the instances with different html file
  
  For checking autoscaling:
  
  1.Install nginx server on one of the MIGs
  2.Add python script and cpu limit tool 
- 3.Run the python file
+ 3.Run the python script
  4.now cpu utilization limit gets exceed and new vm is created
  
  For checking high availability:
  1.As we have 2 instances in two different zones both with nginx server installed
- 2.Now delete one of the instance from one zone
+ 2.Delete one of the instance group or load more traffic untill the max. no. of instances are created and utilized 
  3.Now check hitting same ip adrress which will redirect to another instance in zone
- 4.so there wont be any downtime .
+ 4.so there wont be any downtime 
  
  
