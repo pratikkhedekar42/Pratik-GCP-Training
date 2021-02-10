@@ -3,8 +3,8 @@ Create VPN connection between two GCP custom mode VPC networks and test connecti
 
 Steps performed :
 
-1.Create two projects (project-1 , project-2) in two different regions(us-central1 ,asia-east1)
-2.Create two VPCs (pratik-vpc-1 ,pratik-vpc-2) in both projects respectively
+1.Create two projects (project-1 , project-2) 
+2.Create two VPCs (pratik-vpc-1 ,pratik-vpc-2) in both projects in two different regions(us-central1 ,asia-east1) respectively
 3.Create firewalls in both VPCs
 4.Create two VM instances (vm-instance-project-1 ,vm-instance-project-2) in both projects respectively
 5.Create static IP address (static-ip1 , static-ip2) in both project
